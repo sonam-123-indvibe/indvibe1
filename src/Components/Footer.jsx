@@ -10,7 +10,7 @@ const Footer = () => {
 
           {/* Company Info and Main Links */}
           <div className="col-md-4 mb-4">
-            <h2 className="text-info">EINDVIBE INFOTECH PVT LTD</h2>
+            <h2 className="text-info">INDVIBE INFOTECH PVT LTD</h2>
             
           </div>
 
