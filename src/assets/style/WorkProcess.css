@@ -1,0 +1,123 @@
+.work-process-flow {
+    background: black;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: #d3d3d3;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.flow-chart {
+    gap: 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #00b4db transparent;
+}
+
+.flow-chart::-webkit-scrollbar {
+    height: 6px;
+}
+
+.flow-chart::-webkit-scrollbar-thumb {
+    background: #00b4db;
+    border-radius: 10px;
+}
+
+.step-box {
+    background: #1a1f2b;
+    padding: 20px 25px;
+    border-radius: 12px;
+    min-width: 140px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.step-box:hover {
+    background: #00b4db;
+    box-shadow: 0 0 25px #00b4db;
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, #0083b0, #00b4db);
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 0 0 15px #00b4db; */
+    transition: background 0.3s ease;
+}
+
+.step-box:hover .icon-box {
+    background: linear-gradient(45deg, #00b4db, #0083b0);
+    /* box-shadow: 0 0 25px #0083b0; */
+}
+
+.icon-box i {
+    color: white;
+    font-size: 28px;
+}
+
+.step-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: white;
+    margin: 0;
+}
+
+/* Arrow style */
+.arrow {
+    color: #00b4db;
+    /* font-size: 8px; */
+    /* margin: 0 15px; */ 
+    user-select: none;
+    transition: color 0.3s ease;
+    align-self: center;
+}
+
+.arrow:hover {
+    color: #0083b0;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .flow-chart {
+        gap: 15px;
+    }
+
+    .step-box {
+        min-width: 120px;
+        padding: 15px 20px;
+    }
+
+    .icon-box {
+        width: 50px;
+        height: 50px;
+    }
+
+    .icon-box i {
+        font-size: 22px;
+    }
+
+    .step-title {
+        font-size: 1rem;
+    }
+
+    .arrow {
+        font-size: 10px;
+        margin: 0 4px;
+    }
+}

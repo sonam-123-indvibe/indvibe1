@@ -1,0 +1,134 @@
+.split-services-section {
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: #fff;
+    padding: 60px 0;
+}
+
+.split-container {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.1);
+}
+
+.service-list {
+    flex: 1;
+    background: #0e0e0e;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-right: 2px solid #1f1f1f;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border-left: 4px solid transparent;
+}
+
+.service-item i {
+    margin-right: 10px;
+    color: #00e6e6;
+    font-size: 20px;
+}
+
+.service-item span {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.service-item:hover,
+.service-item.active {
+    background: #1c1c1c;
+    border-left: 4px solid #00e6e6;
+    color: #fff;
+}
+
+.service-detail {
+    flex: 2;
+    padding: 40px;
+    background: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service-detail h2 {
+    font-size: 28px;
+    color: #00e6e6;
+    margin-bottom: 15px;
+}
+
+.service-detail p {
+    font-size: 16px;
+    color: #ccc;
+    line-height: 1.7;
+}
+
+.know-more-btn {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid #00e6e6;
+    color: #00e6e6;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.know-more-btn:hover {
+    background: #00e6e6;
+    color: #000;
+}
+
+.image_holder{
+    width: 600px;
+}
+
+.image_holder img{
+    width: 100%;
+}
+
+
+/* ============================================== */
+
+
+@media (max-width: 768px) {
+    .split-container {
+        flex-direction: column;
+    }
+
+    .service-list {
+        flex-direction: row;
+        overflow-x: auto;
+        background: #1e293b;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .service-item {
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        padding: 10px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .service-item span {
+        display: none;
+        /* hide text in mobile view */
+    }
+
+    .service-detail {
+        margin-top: 20px;
+    }
+    .image_holder {
+        width: 300px;   }
+
+
+}

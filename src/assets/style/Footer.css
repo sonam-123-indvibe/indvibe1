@@ -1,0 +1,43 @@
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #00d9ff;
+    text-shadow: 0 0 5px #00d9ff;
+    transform: translateX(5px);
+}
+
+.icon-hover {
+    transition: transform 0.3s ease;
+}
+
+.icon-hover:hover {
+    transform: scale(1.2);
+}
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #00d9ff;
+    text-shadow: 0 0 6px #00d9ff;
+    transform: translateX(5px);
+}
+
+.icon-hover {
+    transition: transform 0.3s ease;
+}
+
+.icon-hover:hover {
+    transform: scale(1.3);
+}
+
+.navbar-toggler-icon {
+    background-color: #00c6ff;
+}
