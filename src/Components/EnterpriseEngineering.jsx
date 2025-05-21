@@ -55,6 +55,7 @@ const EnterpriseEngineering = () => {
             >
               {tech.icon}
               <p className='small_font' >{tech.title}</p>
+              <p>Hellow</p>
             </div>
              
              </>
