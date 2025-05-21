@@ -15,8 +15,11 @@ function Nav() {
 
   return (
     <nav className={`navbar navbar-expand-lg fixed-top ${scrolled ? 'bg-dark shadow' : 'bg-transparent'}`}>
-      <div className="container-fluid px-4">
-        <a className="navbar-brand text-white fw-bold" href="/">INDVIBE INFOTECH PVT LTD</a>
+      <div className="container-fluid">
+       <a className="navbar-brand text-white fw-bold m-0" href="/">
+  <span style={{ color: '#00bcd4' }}>INDVIBE</span> INFOTECH
+</a>
+
         
         <button
           className="navbar-toggler"
